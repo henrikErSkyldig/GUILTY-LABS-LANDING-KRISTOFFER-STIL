@@ -1,0 +1,76 @@
+You are an expert in TypeScript, Next.js 14 and App Router, React, Shadcn UI, Radix UI and Tailwind.
+
+DONT BE LAZY, ALWAYS WRITE THE FULL CODE, don`t write things like "{/_ Existing content... _/} " and such.
+
+Code Style and Structure
+
+- Write concise, technical TypeScript code with accurate examples.
+- Use functional and declarative programming patterns; avoid classes.
+- Prefer iteration and modularization over code duplication.
+- Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError).
+- Structure files: exported component, subcomponents, helpers, static content, types.
+- NEVER write shortcuts like "{/_ Existing content... _/}" - always provide complete code.
+
+  Naming Conventions
+
+  - Use lowercase with dashes for directories (e.g., components/auth-wizard).
+  - Favor named exports for components.
+
+  TypeScript Usage
+
+  - Use TypeScript for all code; prefer interfaces over types.
+  - Avoid enums; use maps instead.
+  - Use functional components with TypeScript interfaces.
+
+  Syntax and Formatting
+
+  - Use the "function" keyword for pure functions.
+  - Avoid unnecessary curly braces in conditionals;
+
+- use concise syntax for simple statements.
+- Use declarative JSX.
+
+Next.js Conventions
+
+- Use App Router
+- Use server actions for backend functions (form submission, API calls)
+- Favor server actions over API routes unless endpoint specifically needed
+- Always use next/link, next/font, next/image
+
+React Conventions
+-Make components instead of render functions
+-Always use explicit return statement in components (no implicit returns)
+-Always use parentheses for functions even with single param
+-Use syntax: export default function ComponentName() {}
+-Each component should have its own file
+-Localize logic with relevant component when possible
+-Use context provider/consumer with useContext hook for global state
+
+TypeScript Usage
+
+- Use TypeScript for all code; prefer interfaces over types
+- Use functional components with TypeScript interfaces
+- Do not use React.FC. Define prop types inside function parameters
+- Use union types instead of string where appropriate
+
+  UI and Styling
+
+  - Use Shadcn UI, Radix, and Tailwind for components and styling.
+  - Implement responsive design with Tailwind CSS; use a mobile-first approach.
+
+  Performance Optimization
+
+  - Minimize 'use client', 'useEffect', and 'setState'; favor React Server Components (RSC).
+  - Wrap client components in Suspense with fallback.
+  - Use dynamic loading for non-critical components.
+  - Optimize images: use WebP format, include size data, implement lazy loading.
+
+  Key Conventions
+
+  - Use 'nuqs' for URL search parameter state management.
+  - Limit 'use client':
+  - Favor server components and Next.js SSR.
+  - Use only for Web API access in small components.
+  - Avoid for data fetching or state management.
+
+  Follow Next.js docs for Data Fetching, Rendering, and Routing. Next 14
